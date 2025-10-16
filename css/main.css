@@ -58,6 +58,56 @@ nav.gnb.on {width: 400px; left:0; }
 
 .contents .visual .title {width: 100%; position: absolute; left: 0; top:50%; transform: translateY(-50%); font-family: 'Montserrat', sans-serif; font-weight: bold; text-align: center; color:#fff; font-size: 70px; text-shadow: 0 0 10px rgba(0,0,0,0.3); text-transform: uppercase;}
 
+
+/*visitor-counter*/
+#visitor-counter {
+  position: fixed;
+  top: 20px;            /* 👈 상단에서 20px 떨어지게 */
+  right: 20px;          /* 👈 오른쪽에서 20px 떨어지게 */
+  z-index: 9999;        /* 항상 위에 표시되도록 */
+  font-family: Arial, sans-serif;
+  max-width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.08);
+  background: #fff;
+  opacity: 0.95;        /* 살짝 투명하게 (선택 사항) */
+  transition: opacity 0.3s ease;
+}
+
+#visitor-counter:hover {
+  opacity: 1;           /* 마우스 올리면 선명하게 */
+}
+
+#visitor-counter h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+#visitor-counter .vc-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#visitor-counter .vc-label {
+  font-size: 12px;
+  margin-right: 50px;
+  color: #666;
+}
+
+#visitor-counter .vc-value {
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+#visitor-counter .vc-msg {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #999;
+}
+
 /*.inner => 전체 레이아웃 넓이 공통부분*/
 .inner {width: 1400px; margin: 0 auto;}
 
